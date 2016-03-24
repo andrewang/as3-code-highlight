@@ -27,7 +27,7 @@
  * know whether it works.  If it has a C-like, Bash-like, or XML-like syntax
  * then it should work passably.
  */
-package net.anirudh.as3syntaxhighlight
+package net.fproject.as3syntaxhighlight
 {
 	import mx.managers.ISystemManager;
 	

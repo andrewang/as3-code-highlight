@@ -26,7 +26,7 @@
 		<![CDATA[
 			import flash.net.navigateToURL;
 			import mx.collections.ArrayCollection;
-			import net.anirudh.as3syntaxhighlight.CodePrettyPrint;
+			import net.fproject.as3syntaxhighlight.CodePrettyPrint;
 			import mx.core.mx_internal;
 			
 			[Bindable]

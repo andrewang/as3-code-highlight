@@ -12,7 +12,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package net.anirudh.as3syntaxhighlight
+package net.fproject.as3syntaxhighlight
 {
 	import flash.events.Event;
 	import flash.events.EventDispatcher;

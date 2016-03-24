@@ -21,7 +21,7 @@
 	<fx:Script>
 		<![CDATA[
 			import mx.controls.textClasses.TextRange;
-			import net.anirudh.as3syntaxhighlight.CodePrettyPrint;
+			import net.fproject.as3syntaxhighlight.CodePrettyPrint;
 			
 			private var cssString:String =".spl {font-family:sandboxcode;color: #4f94cd;} .str { font-family:sandboxcode; color: #880000; } .kwd { font-family:sandboxcode; color: #000088; } .com { font-family:sandboxcode; color: #008800; } .typ { font-family:sandboxcode; color: #0068CF; } .lit { font-family:sandboxcode; color: #006666; } .pun { font-family:sandboxcode; color: #666600; } .pln { font-family:sandboxcode; color: #222222; } .tag { font-family:sandboxcode; color: #000088; } .atn { font-family:sandboxcode; color: #660066; } .atv { font-family:sandboxcode; color: #880000; } .dec { font-family:sandboxcode; color: #660066; } ";
 			private var codeStyle:StyleSheet;
