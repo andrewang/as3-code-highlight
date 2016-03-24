@@ -1,6 +1,6 @@
 // Author: Anirudh Sasikumar (http://anirudhs.chaosnet.org/)
-// Copryright (C) 2009 Anirudh Sasikumar
-
+// Author: Bui Sy Nguyen <nguyenbs@gmail.com>
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at

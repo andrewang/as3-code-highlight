@@ -1,10 +1,6 @@
 // Author: Anirudh Sasikumar (http://anirudhs.chaosnet.org/)
-// Original: Alex Harui
-// Copryright (C) 2009 Anirudh Sasikumar
-// This is a slightly modified version of Alex Harui's PseudoThread
-// that accepts function args and increments value at a particular
-// index in the arg array
-
+// Author: Bui Sy Nguyen <nguyenbs@gmail.com>
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -16,7 +12,6 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 package net.anirudh.as3syntaxhighlight
 {
 	import flash.events.Event;

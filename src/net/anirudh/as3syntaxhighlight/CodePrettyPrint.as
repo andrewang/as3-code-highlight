@@ -1,44 +1,5 @@
 // Author: Anirudh Sasikumar (http://anirudhs.chaosnet.org/)
-// Copryright (C) 2009 Anirudh Sasikumar
-
-// as3syntaxhighlight is a port of google-code-prettify from
-// javascript to ActionScript 3. The AS3 version is strongly
-// typed, has changes to recognize AS within MXML, syntax highlights
-// function and var differently (.spl) so that coloring similar
-// to flex builder 3 is possible. It also includes some changes
-// which have been marked clearly as such.
-
-// The async version is completely my own. It uses Alex Harui's
-// pseudothread to syntax highlight as much as possible without
-// blocking the UI. It splits the code into chunks, works on each chunk
-// separately (but previous source and decoration info is maintained so
-// syntax is correctly lexed.)
-
-// The only tie in with Flex is PseudoThread. Otherwise this can be used
-// as pure AS3.
-
-// CodePrettyPrint class can output syntax highlighted code as HTML 
-// or as a decorations array which contain indexes and associated style.
-// The decorations can be leveraged for use in TextRange for in-place
-// highlighting. Note that TextRange (actually setTextFormat) is slow
-// compared to setting htmlText. The fastest way is to use the sync
-// version to generate HTML and set that as htmlText.
-
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-// Original license for javascript (google-code-prettify) version follows:
-
-// Copyright (C) 2006 Google Inc.
+// Author: Bui Sy Nguyen <nguyenbs@gmail.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -51,7 +12,6 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 
 /**
  * @fileoverview
