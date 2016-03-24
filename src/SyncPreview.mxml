@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <s:NavigatorContent xmlns:fx="http://ns.adobe.com/mxml/2009" 
-		  xmlns:s="library://ns.adobe.com/flex/spark" 
-		  xmlns:mx="library://ns.adobe.com/flex/mx">
+					xmlns:s="library://ns.adobe.com/flex/spark" 
+					xmlns:mx="library://ns.adobe.com/flex/mx">
 	<!--
 	// Author: Anirudh Sasikumar (http://anirudhs.chaosnet.org/)
 	// Author: Bui Sy Nguyen <nguyenbs@gmail.com>
@@ -23,49 +23,49 @@
 	</s:layout>
 	<fx:Script>
 		<![CDATA[
-		import net.anirudh.as3syntaxhighlight.CodePrettyPrint;
-		
-		private var cssString:String =".spl {font-family:sandboxcode;color: #4f94cd;} .str { font-family:sandboxcode; color: #880000; } .kwd { font-family:sandboxcode; color: #000088; } .com { font-family:sandboxcode; color: #008800; } .typ { font-family:sandboxcode; color: #0068CF; } .lit { font-family:sandboxcode; color: #006666; } .pun { font-family:sandboxcode; color: #666600; } .pln { font-family:sandboxcode; color: #222222; } .tag { font-family:sandboxcode; color: #000088; } .atn { font-family:sandboxcode; color: #660066; } .atv { font-family:sandboxcode; color: #880000; } .dec { font-family:sandboxcode; color: #660066; } ";
-		private var codeStyle:StyleSheet;
-		private var prettyPrint:CodePrettyPrint;	
-		private var codeTimer:Timer;
-		
-		private function doPrettyPrint():void
-		{
-		if ( !codeTimer )
-		{
-		codeTimer = new Timer(200,1);
-		codeTimer.addEventListener(TimerEvent.TIMER, codeHighlight);
-		
-		}
-		if ( codeTimer.running )
-		{
-		codeTimer.stop();
-		}
-		codeTimer.reset();
-		// wait for some time to see if we need to highlight or not
-		codeTimer.start();
-		}
-		
-		
-		private function codeHighlight(event:TimerEvent=null):void
-		{
-		if ( !codeStyle )
-		{
-		codeStyle = new StyleSheet();
-		prettyPrint = new CodePrettyPrint();
-		codeStyle.parseCSS(cssString);
-		}
-		var res:String;
-		res = prettyPrint.prettyPrintOne(tarea1.text, null, true);
-		//trace(res);
-		toutput.text = "";
-		toutput.htmlText = "";
-		toutput.htmlText = res;
-		toutput.styleSheet = codeStyle;
-		}
-		
-		
+			import net.anirudh.as3syntaxhighlight.CodePrettyPrint;
+			
+			private var cssString:String =".spl {font-family:sandboxcode;color: #4f94cd;} .str { font-family:sandboxcode; color: #880000; } .kwd { font-family:sandboxcode; color: #000088; } .com { font-family:sandboxcode; color: #008800; } .typ { font-family:sandboxcode; color: #0068CF; } .lit { font-family:sandboxcode; color: #006666; } .pun { font-family:sandboxcode; color: #666600; } .pln { font-family:sandboxcode; color: #222222; } .tag { font-family:sandboxcode; color: #000088; } .atn { font-family:sandboxcode; color: #660066; } .atv { font-family:sandboxcode; color: #880000; } .dec { font-family:sandboxcode; color: #660066; } ";
+			private var codeStyle:StyleSheet;
+			private var prettyPrint:CodePrettyPrint;	
+			private var codeTimer:Timer;
+			
+			private function doPrettyPrint():void
+			{
+				if ( !codeTimer )
+				{
+					codeTimer = new Timer(200,1);
+					codeTimer.addEventListener(TimerEvent.TIMER, codeHighlight);
+					
+				}
+				if ( codeTimer.running )
+				{
+					codeTimer.stop();
+				}
+				codeTimer.reset();
+				// wait for some time to see if we need to highlight or not
+				codeTimer.start();
+			}
+			
+			
+			private function codeHighlight(event:TimerEvent=null):void
+			{
+				if ( !codeStyle )
+				{
+					codeStyle = new StyleSheet();
+					prettyPrint = new CodePrettyPrint();
+					codeStyle.parseCSS(cssString);
+				}
+				var res:String;
+				res = prettyPrint.prettyPrintOne(tarea1.text, null, true);
+				//trace(res);
+				toutput.text = "";
+				toutput.htmlText = "";
+				toutput.htmlText = res;
+				toutput.styleSheet = codeStyle;
+			}
+			
+			
 		]]>
 	</fx:Script>	
 	<s:VGroup width="50%" height="100%">
